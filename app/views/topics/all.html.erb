@@ -1,0 +1,14 @@
+<table>
+<% @topics.each do |topic| %>
+  <tr>
+    <td> <h2><%= link_to topic.name, topic %></h2> by <%= topic.user_name %> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2">    <%= topic.content %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
